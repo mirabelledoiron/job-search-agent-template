@@ -88,6 +88,17 @@ You can edit it directly at any time:
 
 See `config.example.json` for the full structure with all options.
 
+### Greenhouse and Ashby
+
+`greenhouse` and `ashby` are two popular Applicant Tracking Systems (ATS) used by many tech companies. Their job boards are publicly accessible — no login or API key required.
+
+The format is `"Company Display Name": "slug"` where the slug is the identifier in the company's careers URL:
+
+- Greenhouse: `boards.greenhouse.io/{slug}` → e.g. `boards.greenhouse.io/figma` → slug is `figma`
+- Ashby: `jobs.ashbyhq.com/{slug}` → e.g. `jobs.ashbyhq.com/linear` → slug is `linear`
+
+The agent fetches every open role from each company you list and runs them through the same scoring pipeline as every other source. If a company has no open roles, it's silently skipped — it won't break the run.
+
 ## Project structure
 
 ```
