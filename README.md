@@ -143,8 +143,6 @@ Each source is isolated — if one fails, the rest continue.
 LinkedIn, Indeed, and Welcome to the Jungle block automated requests from cloud servers (GitHub Actions runs on Azure IPs). They cannot be added without a paid proxy service.
 
 Manual search links:
-- [LinkedIn — UX Engineer](https://www.linkedin.com/jobs/search/?keywords=ux%20engineer&f_WT=2&sortBy=DD)
-- [LinkedIn — Design Engineer](https://www.linkedin.com/jobs/search/?keywords=design%20engineer&f_WT=2&sortBy=DD)
-- [Indeed — UX Engineer remote](https://www.indeed.com/jobs?q=ux+engineer&l=remote&sort=date)
-- [Indeed — Design Engineer remote](https://www.indeed.com/jobs?q=design+engineer&l=remote&sort=date)
-- [Welcome to the Jungle — UX Engineer](https://www.welcometothejungle.com/en/jobs?query=ux+engineer&remoteOnly=true)
+- [LinkedIn](https://www.linkedin.com/jobs/search)
+- [Indeed](https://www.indeed.com/jobs)
+- [Welcome to the Jungle](https://www.welcometothejungle.com/en/jobs)
