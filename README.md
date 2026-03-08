@@ -73,16 +73,16 @@ You can edit it directly at any time:
 
 ```json
 {
-  "titles": ["UX Engineer", "Design Engineer"],
-  "titleKeywords": ["design system", "ui engineer"],
-  "excludeTitles": ["Designer", "Software Engineer"],
-  "salary": { "floor": 100000, "targetMin": 130000, "targetMax": 170000, "stretch": 190000 },
+  "titles": ["Your Target Title", "Another Target Title"],
+  "titleKeywords": ["keyword one", "keyword two"],
+  "excludeTitles": ["Title to Exclude"],
+  "salary": { "floor": 80000, "targetMin": 110000, "targetMax": 150000, "stretch": 180000 },
   "seniority": "Senior IC",
-  "skills": ["React", "TypeScript", "Figma"],
-  "industries": { "target": ["SaaS", "AI"], "avoid": ["backend infrastructure"] },
+  "skills": ["Skill One", "Skill Two", "Skill Three"],
+  "industries": { "target": ["Industry A", "Industry B"], "avoid": ["Industry to avoid"] },
   "minScore": 60,
-  "greenhouse": { "Figma": "figma", "Vercel": "vercel" },
-  "ashby": { "Linear": "linear", "Raycast": "raycast" }
+  "greenhouse": { "CompanyName": "greenhouse-slug" },
+  "ashby": { "CompanyName": "ashby-slug" }
 }
 ```
 

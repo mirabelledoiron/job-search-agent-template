@@ -1,47 +1,37 @@
 {
   "titles": [
-    "UX Engineer",
-    "Design Engineer",
-    "Design Systems Engineer",
-    "Design Technologist",
-    "Product Design Engineer"
+    "Your Target Title",
+    "Another Target Title",
+    "Yet Another Title"
   ],
   "titleKeywords": [
-    "ux engineer",
-    "design engineer",
-    "design system",
-    "design technologist",
-    "ui engineer",
-    "frontend design",
-    "interface engineer"
+    "keyword one",
+    "keyword two",
+    "keyword three"
   ],
   "excludeTitles": [
-    "Designer",
-    "Software Engineer"
+    "Title to Exclude",
+    "Another Title to Exclude"
   ],
   "salary": {
-    "floor": 100000,
-    "targetMin": 130000,
-    "targetMax": 170000,
-    "stretch": 190000
+    "floor": 80000,
+    "targetMin": 110000,
+    "targetMax": 150000,
+    "stretch": 180000
   },
   "seniority": "Senior IC",
   "remote": true,
   "locations": ["remote", "us", "usa", "united states", "anywhere", "worldwide"],
-  "skills": ["React", "TypeScript", "Figma", "CSS", "design systems", "accessibility"],
+  "skills": ["Skill One", "Skill Two", "Skill Three"],
   "industries": {
-    "target": ["SaaS", "AI", "developer tools", "design tooling"],
-    "avoid": ["backend infrastructure", "data pipelines", "distributed systems"]
+    "target": ["Industry A", "Industry B", "Industry C"],
+    "avoid": ["Industry to avoid", "Another to avoid"]
   },
   "minScore": 60,
   "greenhouse": {
-    "Figma": "figma",
-    "Vercel": "vercel",
-    "Stripe": "stripe"
+    "CompanyName": "greenhouse-slug"
   },
   "ashby": {
-    "Linear": "linear",
-    "Retool": "retool",
-    "Raycast": "raycast"
+    "CompanyName": "ashby-slug"
   }
 }
