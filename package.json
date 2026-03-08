@@ -1,0 +1,26 @@
+{
+  "name": "job-search-agent-template",
+  "version": "1.0.0",
+  "description": "Automated daily job search agent — find roles that match your criteria, scored by Claude, delivered to Notion every morning.",
+  "type": "module",
+  "scripts": {
+    "setup": "tsx src/setup/index.ts",
+    "dev": "tsx src/index.ts",
+    "weekly": "tsx src/notion/weeklyReport.ts",
+    "build": "tsc",
+    "start": "node dist/index.js"
+  },
+  "dependencies": {
+    "@anthropic-ai/sdk": "^0.39.0",
+    "@notionhq/client": "^2.2.15",
+    "cheerio": "^1.0.0",
+    "dotenv": "^16.4.5",
+    "fast-xml-parser": "^4.4.1",
+    "inquirer": "^9.3.7"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsx": "^4.19.0",
+    "typescript": "^5.5.0"
+  }
+}

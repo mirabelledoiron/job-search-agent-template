@@ -1,0 +1,47 @@
+{
+  "titles": [
+    "UX Engineer",
+    "Design Engineer",
+    "Design Systems Engineer",
+    "Design Technologist",
+    "Product Design Engineer"
+  ],
+  "titleKeywords": [
+    "ux engineer",
+    "design engineer",
+    "design system",
+    "design technologist",
+    "ui engineer",
+    "frontend design",
+    "interface engineer"
+  ],
+  "excludeTitles": [
+    "Designer",
+    "Software Engineer"
+  ],
+  "salary": {
+    "floor": 100000,
+    "targetMin": 130000,
+    "targetMax": 170000,
+    "stretch": 190000
+  },
+  "seniority": "Senior IC",
+  "remote": true,
+  "locations": ["remote", "us", "usa", "united states", "anywhere", "worldwide"],
+  "skills": ["React", "TypeScript", "Figma", "CSS", "design systems", "accessibility"],
+  "industries": {
+    "target": ["SaaS", "AI", "developer tools", "design tooling"],
+    "avoid": ["backend infrastructure", "data pipelines", "distributed systems"]
+  },
+  "minScore": 60,
+  "greenhouse": {
+    "Figma": "figma",
+    "Vercel": "vercel",
+    "Stripe": "stripe"
+  },
+  "ashby": {
+    "Linear": "linear",
+    "Retool": "retool",
+    "Raycast": "raycast"
+  }
+}

@@ -1,0 +1,49 @@
+# Runs every day at 6AM ET on GitHub's servers.
+# No machine needs to be on — GitHub handles the schedule.
+#
+# Required secrets (Settings → Secrets and variables → Actions):
+#   ANTHROPIC_API_KEY
+#   NOTION_TOKEN
+#   NOTION_DAILY_SUMMARIES_PAGE_ID
+#   NOTION_JOB_TRACKER_DB_ID
+#
+# Optional secrets (Adzuna source):
+#   ADZUNA_APP_ID
+#   ADZUNA_APP_KEY
+
+name: Daily Job Search
+
+on:
+  schedule:
+    - cron: "0 11 * * *"     # 11:00 UTC = 6:00 AM EST / 7:00 AM EDT, every day
+  workflow_dispatch:           # "Run workflow" button in the Actions tab for manual runs
+
+jobs:
+  search:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: "npm"
+
+      - name: Install dependencies
+        run: npm ci
+
+      - name: Copy config
+        run: cp config.example.json config.json
+
+      - name: Run job search
+        run: npx tsx src/index.ts
+        env:
+          ANTHROPIC_API_KEY: ${{ secrets.ANTHROPIC_API_KEY }}
+          NOTION_TOKEN: ${{ secrets.NOTION_TOKEN }}
+          NOTION_DAILY_SUMMARIES_PAGE_ID: ${{ secrets.NOTION_DAILY_SUMMARIES_PAGE_ID }}
+          NOTION_JOB_TRACKER_DB_ID: ${{ secrets.NOTION_JOB_TRACKER_DB_ID }}
+          ADZUNA_APP_ID: ${{ secrets.ADZUNA_APP_ID }}
+          ADZUNA_APP_KEY: ${{ secrets.ADZUNA_APP_KEY }}
